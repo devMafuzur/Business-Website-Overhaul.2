@@ -1,0 +1,1036 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Solutions Agency - Web Development & Design</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#F2B108',secondary:'#1a1a1a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.parallax { transform: translateZ(0); }
+.floating-shape { animation: float 6s ease-in-out infinite; }
+@keyframes float {
+0%, 100% { transform: translateY(0px) rotate(0deg); }
+50% { transform: translateY(-20px) rotate(180deg); }
+}
+.fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.counter { font-variant-numeric: tabular-nums; }
+.portfolio-item { transition: all 0.3s ease; }
+.portfolio-item:hover { transform: scale(1.05); }
+.service-card { transition: all 0.3s ease; }
+.service-card:hover { transform: translateY(-10px); }
+.testimonial-card { transition: all 0.5s ease; }
+.contact-input { transition: all 0.3s ease; }
+.contact-input:focus { border-color: #F2B108; box-shadow: 0 0 0 3px rgba(242, 177, 8, 0.1); }
+</style>
+</head>
+<body class="bg-white">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="font-['Arial'] text-2xl text-primary">YOUR LOGO</div>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+<a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+<a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+<a href="#portfolio" class="text-gray-700 hover:text-primary transition-colors">Portfolio</a>
+<a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Get Started
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden"
+style="background-image: url('https://readdy.ai/api/search-image?query=modern%20creative%20workspace%20with%20team%20collaboration%2C%20bright%20natural%20lighting%2C%20professional%20atmosphere%2C%20clean%20minimalist%20office%20environment%2C%20people%20working%20together%20on%20innovative%20projects%2C%20inspiring%20business%20setting%20with%20large%20windows%20and%20contemporary%20furniture&width=1920&height=1080&seq=hero1&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+<div class="floating-shape absolute top-20 left-20 w-16 h-16 bg-primary/20 rounded-full"></div>
+<div class="floating-shape absolute top-40 right-32 w-12 h-12 bg-primary/30 rounded-lg" style="animation-delay: -2s;"></div>
+<div class="floating-shape absolute bottom-32 left-1/4 w-20 h-20 bg-primary/15 rounded-full" style="animation-delay: -4s;"></div>
+<div class="relative z-10 text-center text-white max-w-5xl mx-auto px-6">
+<div class="inline-block px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-primary font-semibold mb-6 fade-in">
+ Award-Winning Digital Agency
+</div>
+<h1 class="text-5xl lg:text-7xl font-bold mb-6 fade-in leading-tight">
+Transform Your Business with 
+<span class="text-primary bg-gradient-to-r from-primary to-yellow-400 bg-clip-text text-transparent">Premium Digital Solutions</span>
+</h1>
+<p class="text-xl lg:text-2xl mb-8 fade-in text-gray-200 max-w-3xl mx-auto" style="animation-delay: 0.3s;">
+From concept to launch, we deliver exceptional web experiences, innovative designs, and strategic solutions that drive measurable growth for industry-leading companies.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center fade-in mb-8" style="animation-delay: 0.6s;">
+<button id="book-consultation" class="bg-primary text-white px-8 py-4 !rounded-button text-lg hover:bg-primary/90 transition-all hover:scale-105 whitespace-nowrap shadow-lg">
+Book Free Consultation
+</button>
+<button class="border-2 border-white text-white px-8 py-4 !rounded-button text-lg hover:bg-white hover:text-gray-900 transition-all whitespace-nowrap">
+View Our Portfolio
+</button>
+</div>
+<div class="flex items-center justify-center space-x-8 text-sm fade-in" style="animation-delay: 0.9s;">
+<div class="flex items-center">
+<i class="ri-star-fill text-primary mr-1"></i>
+<span>4.9/5 Client Rating</span>
+</div>
+<div class="flex items-center">
+<i class="ri-award-line text-primary mr-1"></i>
+<span>150+ Projects Delivered</span>
+</div>
+<div class="flex items-center">
+<i class="ri-time-line text-primary mr-1"></i>
+<span>24/7 Support</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center mb-16">
+<div class="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-semibold mb-4 fade-in">
+Our Expertise
+</div>
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 fade-in">Premium Digital Services</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+From concept to launch, we provide comprehensive digital solutions tailored to your unique business needs and goals. Each service is designed to deliver measurable results and exceptional user experiences.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in group">
+<div class="h-64 bg-cover bg-center relative" style="background-image: url('https://readdy.ai/api/search-image?query=web%20development%20coding%20on%20multiple%20monitors%2C%20clean%20modern%20workspace%2C%20developer%20typing%20on%20keyboard%2C%20responsive%20website%20design%20on%20screens%2C%20professional%20programming%20environment%20with%20bright%20lighting&width=400&height=300&seq=service1&orientation=landscape');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-sm font-semibold">Starting from $2,999</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<i class="ri-code-line text-primary text-xl"></i>
+</div>
+<span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Most Popular</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-3">Web Development</h3>
+<p class="text-gray-600 mb-4">Custom websites and web applications built with cutting-edge technologies for optimal performance and user experience.</p>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Responsive Design</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>SEO Optimization</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Performance Optimization</li>
+</ul>
+<button class="service-book-btn w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap" data-service="Web Development">
+Book Consultation
+</button>
+</div>
+</div>
+<div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in group" style="animation-delay: 0.2s;">
+<div class="h-64 bg-cover bg-center relative" style="background-image: url('https://readdy.ai/api/search-image?query=graphic%20design%20workspace%20with%20creative%20tools%2C%20designer%20working%20on%20brand%20identity%2C%20colorful%20design%20elements%2C%20modern%20creative%20studio%20with%20sketches%20and%20digital%20tablets%2C%20professional%20design%20process&width=400&height=300&seq=service2&orientation=landscape');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-sm font-semibold">Starting from $1,999</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<i class="ri-palette-line text-primary text-xl"></i>
+</div>
+<span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Creative</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-3">UI/UX Design</h3>
+<p class="text-gray-600 mb-4">Beautiful, intuitive designs that engage users and drive conversions through thoughtful user experience strategies.</p>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>User Research</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Wireframing & Prototyping</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Design Systems</li>
+</ul>
+<button class="service-book-btn w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap" data-service="UI/UX Design">
+Book Consultation
+</button>
+</div>
+</div>
+<div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in group" style="animation-delay: 0.4s;">
+<div class="h-64 bg-cover bg-center relative" style="background-image: url('https://readdy.ai/api/search-image?query=digital%20marketing%20strategy%20meeting%2C%20team%20analyzing%20data%20charts%20and%20graphs%2C%20modern%20conference%20room%20with%20presentation%20screens%2C%20professional%20business%20consultation%20atmosphere&width=400&height=300&seq=service3&orientation=landscape');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-sm font-semibold">Starting from $1,499</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<i class="ri-rocket-line text-primary text-xl"></i>
+</div>
+<span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">Strategic</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-3">Digital Strategy</h3>
+<p class="text-gray-600 mb-4">Comprehensive digital strategies that align with your business objectives and maximize your online presence.</p>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Market Analysis</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Competitor Research</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Growth Planning</li>
+</ul>
+<button class="service-book-btn w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap" data-service="Digital Strategy">
+Book Consultation
+</button>
+</div>
+</div>
+<div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in group" style="animation-delay: 0.6s;">
+<div class="h-64 bg-cover bg-center relative" style="background-image: url('https://readdy.ai/api/search-image?query=mobile%20app%20development%20on%20smartphone%20and%20tablet%20devices%2C%20responsive%20design%20testing%2C%20modern%20development%20workspace%20with%20multiple%20devices%2C%20clean%20professional%20tech%20environment&width=400&height=300&seq=service4&orientation=landscape');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-sm font-semibold">Starting from $4,999</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<i class="ri-smartphone-line text-primary text-xl"></i>
+</div>
+<span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full">Premium</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-3">Mobile Apps</h3>
+<p class="text-gray-600 mb-4">Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.</p>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>iOS & Android</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Cross-Platform</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>App Store Optimization</li>
+</ul>
+<button class="service-book-btn w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap" data-service="Mobile Apps">
+Book Consultation
+</button>
+</div>
+</div>
+<div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in group" style="animation-delay: 0.8s;">
+<div class="h-64 bg-cover bg-center relative" style="background-image: url('https://readdy.ai/api/search-image?query=e-commerce%20online%20shopping%20platform%20on%20computer%20screen%2C%20digital%20storefront%20with%20product%20displays%2C%20modern%20retail%20technology%20workspace%2C%20professional%20e-commerce%20development%20environment&width=400&height=300&seq=service5&orientation=landscape');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-sm font-semibold">Starting from $3,999</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<i class="ri-shopping-cart-line text-primary text-xl"></i>
+</div>
+<span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full">Revenue Focused</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-3">E-commerce</h3>
+<p class="text-gray-600 mb-4">Powerful e-commerce solutions that drive sales and provide seamless shopping experiences for your customers.</p>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Payment Integration</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Inventory Management</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Analytics Dashboard</li>
+</ul>
+<button class="service-book-btn w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap" data-service="E-commerce">
+Book Consultation
+</button>
+</div>
+</div>
+<div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in group" style="animation-delay: 1s;">
+<div class="h-64 bg-cover bg-center relative" style="background-image: url('https://readdy.ai/api/search-image?query=business%20consulting%20meeting%20with%20professionals%2C%20strategic%20planning%20session%2C%20modern%20office%20boardroom%20with%20charts%20and%20presentations%2C%20collaborative%20business%20environment&width=400&height=300&seq=service6&orientation=landscape');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-sm font-semibold">Starting from $999</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<i class="ri-lightbulb-line text-primary text-xl"></i>
+</div>
+<span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Expert Advice</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-3">Consulting</h3>
+<p class="text-gray-600 mb-4">Expert guidance and strategic insights to help you navigate the digital landscape and achieve your business goals.</p>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Business Analysis</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Technology Audit</li>
+<li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Implementation Plan</li>
+</ul>
+<button class="service-book-btn w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap" data-service="Consulting">
+Book Consultation
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="fade-in">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+Crafting Digital Excellence Since 2015
+</h2>
+<p class="text-xl text-gray-600 mb-8">
+We are a passionate team of designers, developers, and strategists dedicated to creating exceptional digital experiences that drive business growth and user engagement.
+</p>
+<p class="text-lg text-gray-600 mb-8">
+Our collaborative approach combines creative vision with technical expertise to deliver solutions that not only look amazing but also perform flawlessly across all platforms and devices.
+</p>
+<div class="grid grid-cols-3 gap-8 mb-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-primary counter" data-target="150">0</div>
+<div class="text-gray-600">Projects Completed</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary counter" data-target="8">0</div>
+<div class="text-gray-600">Years Experience</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary counter" data-target="95">0</div>
+<div class="text-gray-600">Client Satisfaction</div>
+</div>
+</div>
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Meet Our Team
+</button>
+</div>
+<div class="fade-in" style="animation-delay: 0.3s;">
+<div class="rounded-2xl overflow-hidden shadow-2xl">
+<img src="https://readdy.ai/api/search-image?query=professional%20creative%20team%20working%20together%20in%20modern%20office%2C%20diverse%20group%20of%20designers%20and%20developers%20collaborating%2C%20bright%20workspace%20with%20natural%20lighting%2C%20contemporary%20office%20environment%20with%20creative%20energy&width=600&height=400&seq=about1&orientation=landscape"
+alt="Our Team" class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 fade-in">Our Portfolio</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 fade-in">
+Explore our latest projects and see how we've helped businesses transform their digital presence.
+</p>
+<div class="flex justify-center space-x-4 mb-12 fade-in">
+<button class="portfolio-filter bg-primary text-white px-6 py-2 !rounded-button transition-all whitespace-nowrap" data-filter="all">
+All Projects
+</button>
+<button class="portfolio-filter bg-white text-gray-700 px-6 py-2 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap" data-filter="web">
+Web Design
+</button>
+<button class="portfolio-filter bg-white text-gray-700 px-6 py-2 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap" data-filter="mobile">
+Mobile Apps
+</button>
+<button class="portfolio-filter bg-white text-gray-700 px-6 py-2 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap" data-filter="ecommerce">
+E-commerce
+</button>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="portfolio-item bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in" data-category="web">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20website%20design%20mockup%20on%20computer%20screen%2C%20clean%20minimalist%20web%20interface%2C%20professional%20business%20website%20layout%2C%20contemporary%20web%20design%20with%20elegant%20typography&width=400&height=300&seq=portfolio1&orientation=landscape');"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">TechCorp Website Redesign</h3>
+<p class="text-gray-600 mb-4">Complete website overhaul for a leading technology company, featuring modern design and enhanced user experience.</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-primary font-semibold">Web Design</span>
+<button class="text-primary hover:text-primary/80 transition-colors">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="portfolio-item bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in" data-category="mobile" style="animation-delay: 0.2s;">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=mobile%20app%20interface%20design%20on%20smartphone%20screen%2C%20modern%20app%20UI%20with%20clean%20navigation%2C%20professional%20mobile%20application%20mockup%2C%20sleek%20app%20design%20with%20intuitive%20user%20interface&width=400&height=300&seq=portfolio2&orientation=landscape');"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">FinanceTracker Mobile App</h3>
+<p class="text-gray-600 mb-4">Intuitive mobile application for personal finance management with advanced analytics and budgeting tools.</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-primary font-semibold">Mobile App</span>
+<button class="text-primary hover:text-primary/80 transition-colors">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="portfolio-item bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in" data-category="ecommerce" style="animation-delay: 0.4s;">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=e-commerce%20website%20shopping%20interface%2C%20online%20store%20product%20catalog%20display%2C%20modern%20retail%20website%20design%2C%20professional%20e-commerce%20platform%20with%20shopping%20cart&width=400&height=300&seq=portfolio3&orientation=landscape');"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Fashion Boutique Store</h3>
+<p class="text-gray-600 mb-4">Elegant e-commerce platform for a luxury fashion brand with seamless shopping experience and payment integration.</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-primary font-semibold">E-commerce</span>
+<button class="text-primary hover:text-primary/80 transition-colors">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="portfolio-item bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in" data-category="web" style="animation-delay: 0.6s;">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=corporate%20website%20design%20on%20laptop%20screen%2C%20professional%20business%20web%20interface%2C%20modern%20company%20website%20layout%2C%20clean%20corporate%20web%20design%20with%20professional%20branding&width=400&height=300&seq=portfolio4&orientation=landscape');"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Healthcare Platform</h3>
+<p class="text-gray-600 mb-4">Comprehensive healthcare management system with patient portals and appointment scheduling functionality.</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-primary font-semibold">Web Platform</span>
+<button class="text-primary hover:text-primary/80 transition-colors">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="portfolio-item bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in" data-category="mobile" style="animation-delay: 0.8s;">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=food%20delivery%20mobile%20app%20interface%2C%20restaurant%20ordering%20app%20on%20smartphone%2C%20modern%20food%20app%20UI%20design%2C%20professional%20mobile%20application%20for%20food%20service&width=400&height=300&seq=portfolio5&orientation=landscape');"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">FoodDelivery App</h3>
+<p class="text-gray-600 mb-4">User-friendly food delivery application with real-time tracking and integrated payment solutions.</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-primary font-semibold">Mobile App</span>
+<button class="text-primary hover:text-primary/80 transition-colors">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="portfolio-item bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl fade-in" data-category="web" style="animation-delay: 1s;">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=educational%20website%20platform%20on%20computer%20screen%2C%20online%20learning%20interface%20design%2C%20modern%20educational%20web%20platform%2C%20professional%20e-learning%20website%20layout&width=400&height=300&seq=portfolio6&orientation=landscape');"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">EduLearn Platform</h3>
+<p class="text-gray-600 mb-4">Interactive online learning platform with course management and student progress tracking capabilities.</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-primary font-semibold">Web Platform</span>
+<button class="text-primary hover:text-primary/80 transition-colors">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 fade-in">What Our Clients Say</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="testimonial-card bg-gray-50 rounded-2xl p-8 fade-in">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20business%20woman%20headshot%20portrait%2C%20confident%20female%20executive%2C%20corporate%20professional%20photo%2C%20clean%20business%20portrait%20with%20natural%20lighting&width=80&height=80&seq=client1&orientation=squarish"
+alt="Sarah Johnson" class="w-16 h-16 rounded-full object-cover object-top mr-4">
+<div>
+<h4 class="font-bold text-gray-900">Sarah Johnson</h4>
+<p class="text-gray-600">CEO, TechStart Inc.</p>
+</div>
+</div>
+<div class="text-primary text-4xl mb-4">"</div>
+<p class="text-gray-600 mb-4">
+"The team delivered an exceptional website that perfectly captured our brand vision. The attention to detail and professional approach exceeded our expectations."
+</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<div class="testimonial-card bg-gray-50 rounded-2xl p-8 fade-in" style="animation-delay: 0.2s;">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20business%20man%20headshot%20portrait%2C%20confident%20male%20executive%2C%20corporate%20professional%20photo%2C%20clean%20business%20portrait%20with%20natural%20lighting&width=80&height=80&seq=client2&orientation=squarish"
+alt="Michael Chen" class="w-16 h-16 rounded-full object-cover object-top mr-4">
+<div>
+<h4 class="font-bold text-gray-900">Michael Chen</h4>
+<p class="text-gray-600">Founder, Digital Solutions</p>
+</div>
+</div>
+<div class="text-primary text-4xl mb-4">"</div>
+<p class="text-gray-600 mb-4">
+"Our mobile app development project was completed on time and within budget. The user experience is fantastic and our customers love it."
+</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<div class="testimonial-card bg-gray-50 rounded-2xl p-8 fade-in" style="animation-delay: 0.4s;">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20business%20woman%20headshot%20portrait%2C%20confident%20female%20entrepreneur%2C%20corporate%20professional%20photo%2C%20clean%20business%20portrait%20with%20natural%20lighting&width=80&height=80&seq=client3&orientation=squarish"
+alt="Emily Rodriguez" class="w-16 h-16 rounded-full object-cover object-top mr-4">
+<div>
+<h4 class="font-bold text-gray-900">Emily Rodriguez</h4>
+<p class="text-gray-600">Marketing Director, RetailPro</p>
+</div>
+</div>
+<div class="text-primary text-4xl mb-4">"</div>
+<p class="text-gray-600 mb-4">
+"The e-commerce platform they built for us has significantly increased our online sales. Their strategic approach to UX design made all the difference."
+</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16">
+<div class="fade-in">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+Let's Start Your Next Project
+</h2>
+<p class="text-xl text-gray-600 mb-8">
+Ready to transform your digital presence? Get in touch with us today and let's discuss how we can help bring your vision to life.
+</p>
+<div class="space-y-6 mb-8">
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+<i class="ri-mail-line text-primary text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Email Us</h4>
+<p class="text-gray-600">hello@digitalsolutions.com</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+<i class="ri-phone-line text-primary text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Call Us</h4>
+<p class="text-gray-600">+1 (555) 123-4567</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+<i class="ri-map-pin-line text-primary text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Visit Us</h4>
+<p class="text-gray-600">123 Innovation Drive, Tech City, TC 12345</p>
+</div>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-lg">
+<img src="https://readdy.ai/api/search-image?query=modern%20office%20building%20exterior%20with%20glass%20facade%2C%20contemporary%20business%20headquarters%2C%20professional%20corporate%20building%20with%20clean%20architecture%2C%20bright%20natural%20lighting&width=600&height=300&seq=contact1&orientation=landscape"
+alt="Our Office" class="w-full h-64 object-cover object-top">
+</div>
+</div>
+<div class="fade-in" style="animation-delay: 0.3s;">
+<form class="bg-white rounded-2xl p-8 shadow-lg">
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+<input type="text" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="John">
+</div>
+<div>
+<label class="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+<input type="text" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="Doe">
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+<input type="email" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="john@example.com">
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
+<input type="tel" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="+1 (555) 123-4567">
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Project Type</label>
+<div class="relative">
+<button type="button" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm text-left bg-white flex items-center justify-between">
+<span>Select a service</span>
+<i class="ri-arrow-down-s-line text-gray-400"></i>
+</button>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+<textarea rows="4" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm resize-none" placeholder="Tell us about your project..."></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="font-['Pacifico'] text-2xl text-primary mb-4">logo</div>
+<p class="text-gray-300 mb-6">
+Creating exceptional digital experiences that drive business growth and user engagement.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-facebook-fill text-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-twitter-fill text-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-linkedin-fill text-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-instagram-fill text-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Services</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Web Development</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">UI/UX Design</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Mobile Apps</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">E-commerce</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Digital Strategy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Our Team</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Careers</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-300 mb-4">Subscribe to get updates on our latest projects and insights.</p>
+<div class="flex">
+<input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 !rounded-button focus:outline-none focus:border-primary text-sm">
+<button class="bg-primary text-white px-4 py-2 !rounded-button ml-2 hover:bg-primary/90 transition-colors whitespace-nowrap">
+<i class="ri-send-plane-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">© 2024 Digital Solutions Agency. All rights reserved.</p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Booking Modal -->
+<div id="booking-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+<div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+<div class="p-6 border-b border-gray-200">
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-bold text-gray-900">Book Your Free Consultation</h3>
+<button id="close-modal" class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors">
+<i class="ri-close-line text-xl"></i>
+</button>
+</div>
+<p class="text-gray-600 mt-2">Let's discuss your project and how we can help you achieve your goals.</p>
+</div>
+<form id="booking-form" class="p-6">
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-sm font-semibold text-gray-700 mb-2">First Name *</label>
+<input type="text" name="firstName" required class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="John">
+</div>
+<div>
+<label class="block text-sm font-semibold text-gray-700 mb-2">Last Name *</label>
+<input type="text" name="lastName" required class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="Doe">
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
+<input type="email" name="email" required class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="john@example.com">
+</div>
+<div>
+<label class="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
+<input type="tel" name="phone" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="+1 (555) 123-4567">
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Company</label>
+<input type="text" name="company" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm" placeholder="Your Company Name">
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Service Interest *</label>
+<div class="relative">
+<select name="service" required class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm bg-white pr-8">
+<option value="">Select a service</option>
+<option value="Web Development">Web Development</option>
+<option value="UI/UX Design">UI/UX Design</option>
+<option value="Digital Strategy">Digital Strategy</option>
+<option value="Mobile Apps">Mobile Apps</option>
+<option value="E-commerce">E-commerce</option>
+<option value="Consulting">Consulting</option>
+<option value="Multiple Services">Multiple Services</option>
+</select>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Budget Range</label>
+<div class="relative">
+<select name="budget" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm bg-white pr-8">
+<option value="">Select budget range</option>
+<option value="Under $5,000">Under $5,000</option>
+<option value="$5,000 - $15,000">$5,000 - $15,000</option>
+<option value="$15,000 - $50,000">$15,000 - $50,000</option>
+<option value="$50,000+">$50,000+</option>
+</select>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Preferred Meeting Time</label>
+<div class="grid grid-cols-2 gap-4">
+<input type="date" name="preferredDate" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm">
+<select name="preferredTime" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm bg-white pr-8">
+<option value="">Select time</option>
+<option value="9:00 AM">9:00 AM</option>
+<option value="10:00 AM">10:00 AM</option>
+<option value="11:00 AM">11:00 AM</option>
+<option value="1:00 PM">1:00 PM</option>
+<option value="2:00 PM">2:00 PM</option>
+<option value="3:00 PM">3:00 PM</option>
+<option value="4:00 PM">4:00 PM</option>
+</select>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold text-gray-700 mb-2">Project Details</label>
+<textarea name="projectDetails" rows="4" maxlength="500" class="contact-input w-full px-4 py-3 border border-gray-200 !rounded-button focus:outline-none text-sm resize-none" placeholder="Tell us about your project, goals, and any specific requirements..."></textarea>
+<div class="text-right text-xs text-gray-500 mt-1">
+<span id="char-count">0</span>/500 characters
+</div>
+</div>
+<div class="flex items-center mb-6">
+<input type="checkbox" id="agree-terms" name="agreeTerms" required class="mr-3 opacity-0 absolute">
+<div class="w-5 h-5 border-2 border-gray-300 rounded mr-3 flex items-center justify-center cursor-pointer" id="checkbox-custom">
+<i class="ri-check-line text-white text-sm hidden"></i>
+</div>
+<label for="agree-terms" class="text-sm text-gray-600 cursor-pointer">
+I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a>
+</label>
+</div>
+<div class="flex gap-4">
+<button type="button" id="cancel-booking" class="flex-1 border border-gray-300 text-gray-700 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap">
+Cancel
+</button>
+<button type="submit" class="flex-1 bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Book Consultation
+</button>
+</div>
+</form>
+</div>
+</div>
+
+<!-- Success Message -->
+<div id="success-message" class="fixed top-4 right-4 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+<div class="flex items-center">
+<i class="ri-check-circle-line text-xl mr-3"></i>
+<div>
+<h4 class="font-semibold">Booking Confirmed!</h4>
+<p class="text-sm">We'll contact you within 24 hours.</p>
+</div>
+</div>
+</div>
+
+<script id="scroll-animations">
+document.addEventListener('DOMContentLoaded', function() {
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+}
+});
+}, observerOptions);
+document.querySelectorAll('.fade-in').forEach(el => {
+observer.observe(el);
+});
+});
+</script>
+<script id="counter-animation">
+document.addEventListener('DOMContentLoaded', function() {
+const counters = document.querySelectorAll('.counter');
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const counter = entry.target;
+const target = parseInt(counter.getAttribute('data-target'));
+let current = 0;
+const increment = target / 100;
+const updateCounter = () => {
+if (current < target) {
+current += increment;
+counter.textContent = Math.floor(current);
+requestAnimationFrame(updateCounter);
+} else {
+counter.textContent = target;
+}
+};
+updateCounter();
+observer.unobserve(counter);
+}
+});
+}, { threshold: 0.5 });
+counters.forEach(counter => observer.observe(counter));
+});
+</script>
+<script id="portfolio-filter">
+document.addEventListener('DOMContentLoaded', function() {
+const filterButtons = document.querySelectorAll('.portfolio-filter');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+filterButtons.forEach(button => {
+button.addEventListener('click', function() {
+const filter = this.getAttribute('data-filter');
+filterButtons.forEach(btn => {
+btn.classList.remove('bg-primary', 'text-white');
+btn.classList.add('bg-white', 'text-gray-700');
+});
+this.classList.remove('bg-white', 'text-gray-700');
+this.classList.add('bg-primary', 'text-white');
+portfolioItems.forEach(item => {
+if (filter === 'all' || item.getAttribute('data-category') === filter) {
+item.style.display = 'block';
+setTimeout(() => {
+item.style.opacity = '1';
+item.style.transform = 'scale(1)';
+}, 100);
+} else {
+item.style.opacity = '0';
+item.style.transform = 'scale(0.8)';
+setTimeout(() => {
+item.style.display = 'none';
+}, 300);
+}
+});
+});
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="parallax-effect">
+document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('scroll', function() {
+const scrolled = window.pageYOffset;
+const hero = document.querySelector('#home');
+if (hero) {
+hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+}
+});
+});
+</script>
+
+<script id="booking-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const modal = document.getElementById('booking-modal');
+const bookingForm = document.getElementById('booking-form');
+const successMessage = document.getElementById('success-message');
+const charCount = document.getElementById('char-count');
+const projectDetails = document.querySelector('textarea[name="projectDetails"]');
+const customCheckbox = document.getElementById('checkbox-custom');
+const agreeTerms = document.getElementById('agree-terms');
+
+// Open modal functions
+function openModal(service = '') {
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+document.body.style.overflow = 'hidden';
+if (service) {
+document.querySelector('select[name="service"]').value = service;
+}
+}
+
+// Close modal functions
+function closeModal() {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+document.body.style.overflow = 'auto';
+bookingForm.reset();
+charCount.textContent = '0';
+updateCheckbox();
+}
+
+// Event listeners for opening modal
+document.getElementById('book-consultation').addEventListener('click', () => openModal());
+document.querySelectorAll('.service-book-btn').forEach(btn => {
+btn.addEventListener('click', function() {
+const service = this.getAttribute('data-service');
+openModal(service);
+});
+});
+
+// Event listeners for closing modal
+document.getElementById('close-modal').addEventListener('click', closeModal);
+document.getElementById('cancel-booking').addEventListener('click', closeModal);
+modal.addEventListener('click', function(e) {
+if (e.target === modal) closeModal();
+});
+
+// Character counter
+projectDetails.addEventListener('input', function() {
+const count = this.value.length;
+charCount.textContent = count;
+if (count > 500) {
+this.value = this.value.substring(0, 500);
+charCount.textContent = '500';
+}
+});
+
+// Custom checkbox
+function updateCheckbox() {
+const checkIcon = customCheckbox.querySelector('i');
+if (agreeTerms.checked) {
+customCheckbox.classList.add('bg-primary', 'border-primary');
+customCheckbox.classList.remove('border-gray-300');
+checkIcon.classList.remove('hidden');
+} else {
+customCheckbox.classList.remove('bg-primary', 'border-primary');
+customCheckbox.classList.add('border-gray-300');
+checkIcon.classList.add('hidden');
+}
+}
+
+customCheckbox.addEventListener('click', function() {
+agreeTerms.checked = !agreeTerms.checked;
+updateCheckbox();
+});
+
+agreeTerms.addEventListener('change', updateCheckbox);
+
+// Form submission
+bookingForm.addEventListener('submit', function(e) {
+e.preventDefault();
+
+const formData = new FormData(this);
+const data = Object.fromEntries(formData.entries());
+
+// Here you would typically send the data to your server
+console.log('Booking data:', data);
+
+
+// Show success message
+closeModal();
+successMessage.classList.remove('translate-x-full');
+setTimeout(() => {
+successMessage.classList.add('translate-x-full');
+}, 5000);
+});
+
+// Set minimum date to today
+const dateInput = document.querySelector('input[name="preferredDate"]');
+const today = new Date().toISOString().split('T')[0];
+dateInput.setAttribute('min', today);
+});
+</script>
+
+<script id="enhanced-interactions">
+document.addEventListener('DOMContentLoaded', function() {
+// Enhanced service card interactions
+document.querySelectorAll('.service-card').forEach(card => {
+card.addEventListener('mouseenter', function() {
+this.style.transform = 'translateY(-10px) scale(1.02)';
+});
+card.addEventListener('mouseleave', function() {
+this.style.transform = 'translateY(0) scale(1)';
+});
+});
+
+// Smooth scroll for navigation
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+const offsetTop = target.offsetTop - 80;
+window.scrollTo({
+top: offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+
+// Active navigation highlighting
+window.addEventListener('scroll', function() {
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+let current = '';
+sections.forEach(section => {
+const sectionTop = section.offsetTop - 100;
+if (window.pageYOffset >= sectionTop) {
+current = section.getAttribute('id');
+}
+});
+
+navLinks.forEach(link => {
+link.classList.remove('text-primary');
+link.classList.add('text-gray-700');
+if (link.getAttribute('href') === '#' + current) {
+link.classList.add('text-primary');
+link.classList.remove('text-gray-700');
+}
+});
+});
+});
+</script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'GQwc9aDTNustSABo-O3pXA';
+    window.host = 'readdy.ai';
+</script>
+</body>
+</html>
